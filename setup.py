@@ -3,7 +3,9 @@ import psycopg2
 
 bot = telebot.TeleBot('1099782868:AAGWpSTmV8i9FyTkrnfo2aWzjOYgyB-ZtQ4')
 
-DATABASE_URL = 'postgres://qaqopfmrjyeqgf:c8d7ea9b7ac4e482e15d5b9806650b9439590105946b06fd766d878e5672ffb6@ec2-63-34-97-163.eu-west-1.compute.amazonaws.com:5432/d826n89f0qe5qq'
+
+DATABASE_URL = os.environ['DATABASE_URL']
+
 con = psycopg2.connect(DATABASE_URL, sslmode='require')
 
 print("Database opened successfully")
