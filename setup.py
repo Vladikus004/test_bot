@@ -1,5 +1,6 @@
 import telebot
 import psycopg2
+import os
 
 bot = telebot.TeleBot('1099782868:AAGWpSTmV8i9FyTkrnfo2aWzjOYgyB-ZtQ4')
 
